@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = 3000;
+var http = require('http');
 
 // connect to database
 const db = require('../database/index.js');
@@ -52,7 +53,7 @@ app.delete('/comments', (req, res) => {
   });
 });
 
-// start server
-var server  = require('http').createServer(app);
+// create a webserver using http
+var server  = http.createServer(app);
 server.listen(PORT);
 // app.listen(PORT, () => console.log(`listening on port ${PORT}`));
