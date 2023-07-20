@@ -80,7 +80,8 @@ app.get('/blogs/:id', (req, res) => {
     });
 });
 
-// EDIT ROUTE
-app.get('/blogs/:id/edit', (req, res) => {
-    // find
+// // EDIT ROUTE
+// app.get('/blogs/:id/edit', (req, res) => {
+//     // find
 
+// }
