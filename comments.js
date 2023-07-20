@@ -53,4 +53,6 @@ app.delete('/comments', (req, res) => {
 });
 
 // start server
-app.listen(PORT, () => console.log(`listening on port ${PORT}`));
+var server  = require('http').createServer(app);
+server.listen(PORT);
+// app.listen(PORT, () => console.log(`listening on port ${PORT}`));
