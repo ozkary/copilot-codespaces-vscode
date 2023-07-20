@@ -1,0 +1,11 @@
+{
+    // Name this configuration
+    "name": "Ozkary Codespace for AI",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot"
+            ]
+        }
+    }
+}
